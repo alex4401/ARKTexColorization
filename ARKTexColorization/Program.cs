@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Net.Mime;
+using Gtk;
 
 namespace ARKTexColorization
 {
@@ -6,7 +8,10 @@ namespace ARKTexColorization
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Application.Init();
+            var win = new MainWindow();
+            win.ShowAll();
+            Application.Run();
         }
     }
 }
